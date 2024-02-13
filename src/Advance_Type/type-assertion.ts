@@ -24,5 +24,11 @@ const resultTobeString = MinitToSecond("78") as string;
 // console.log(resultTobeString)
 
 
+// Different Way of Type Assertion
+
+const resultTobeNumberAnoterWay = <number> MinitToSecond(60);
+const resultTobeStringAnoterWay = <string> MinitToSecond("78");
+
+
 
 
