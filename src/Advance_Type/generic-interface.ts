@@ -1,4 +1,10 @@
-// Practice It 
 
+interface genericString<T> {
+    name:T;
+}
 
-// generic-interface
+const userInfo:genericString<string> ={
+    name:'raihan'
+}
+
+// Todo: Search on google and implement all generic topic
