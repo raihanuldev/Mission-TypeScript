@@ -16,6 +16,47 @@ const habibInfo :habibAndCurrentGf ={
     bedirName:'Tasmin sultana'
 }
 
+
+interface userInfo {
+    name:string,
+    age:number
+}
+
+interface newUser extends userInfo {
+    role:string
+}
+
+const RaihanInfo:newUser ={
+    name:"raihan",
+    age:324,
+    role:'admin'
+}
+
+// union
+type bedirInfo ={
+    name:string
+}
+
+type newBedirInfo ={
+    role:string
+}
+
+const PuspaInfo:bedirInfo & newBedirInfo ={
+    name:'Puspa',
+    role:'exxxxxx'
+}
+
+
+
+
+
+
+
+
+
+
+
+
 // interface habibFristGfInterFaceType {
 //     gfFrist: string,
 //     fristGfAge: number,
