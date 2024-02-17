@@ -12,5 +12,5 @@ class UserInformation {
 
 }
 
-const HamidBhai = new UserInformation("Hamidul Islam", 11, "Shaplapur-USA", 321372, false)
+const HamidBhai = new UserInformation("Hamidul Islam ", 11, "Shaplapur-USA", 321372, false)
 HamidBhai.getinfo()
