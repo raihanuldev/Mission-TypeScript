@@ -1,44 +1,51 @@
 
-// Student Class
-class Student {
+// Common property will Be extend each Class
+class Parent {
     name: string;
     age: number;
     adress: string;
 
-    // Constructor
     constructor(name: string, age: number, adress: string) {
-        this.adress = adress;
-        this.age = age;
         this.name = name;
+        this.age = age;
+        this.adress = adress;
     }
-    // Method 
+    // common Method For Each Person
     makeSleep(hours: number): string {
         return `this ${this.name} Person will take ${hours} for sleep`
+    }
+}
+
+
+
+// Student Class
+class Student extends Parent {
+    // Constructor
+    constructor(name: string, age: number, adress: string) {
+        super(name, age, adress)
     }
 }
 
 // Teacher Class
-class Teacher {
-    name: string;
-    age: number;
-    adress: string;
-
+class Teacher extends Parent {
+    destination: string;
     // Constructor
-    constructor(name: string, age: number, adress: string) {
-        this.name = name;
-        this.age = age;
-        this.adress = adress;
+    constructor(name: string, age: number, adress: string, destination: string) {
+        super(name, age, adress)
+        this.destination = destination;
+
     }
     // Method: 
-    makeSleep(hours: number): string {
-        return `this ${this.name} Person will take ${hours} for sleep`
-
-    }
-    // Another Method for Teacher
     numberOfClass(NOC: number): string {
-        return `this ${this.name} Person will take ${NOC} classes`
-
+        return `this ${name} Person will take ${NOC} classes`
+    
     }
 }
 
-const student1234 = new Student("abol",213,"kalaPara")
+
+
+const student1234 = new Student("abol", 213, "kalaPara")
+
+const hamidsir = new Teacher("Hamid",8,"Dhaka","Programmmer");
+
+
