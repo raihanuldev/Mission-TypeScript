@@ -17,6 +17,7 @@ const getTodoData = () => __awaiter(void 0, void 0, void 0, function* () {
     const result = yield getTodo();
     console.log(result);
 });
+getTodoData();
 const PromisMake = () => {
     return new Promise((resolve, reject) => {
         const data = "succefully fetch data";
